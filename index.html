@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema Nutricional</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <fieldset>
+    <div id="app">
+      <header>Sistema Nutricional</header>
+
+      <legend>Cadastro de Pacientes</legend>
+      <br>
+      <label>Nome:</label>
+      <input class="barrinha"
+        id="usuarionome"
+        name="usuarionome"
+        type="usuarionome"
+        placeholder="Escreva..."
+      /><br><br>
+      <div class="pt2">
+        <label>Idade:</label>
+        <input class="barrinha"
+          id="usuarioidade"
+          name="usuarioidade"
+          type="usuarioidade"
+          placeholder="Escreva..."
+        />
+      </div><br>
+      <div class="pt3">
+        <label>Peso:</label>
+        <input class="barrinha"
+          id="usuariopeso"
+          name="usuariopeso"
+          type="usuariopeso"
+          placeholder="Escreva..."
+        />
+      </div><br>
+      <div class="pt4">
+        <label>Altura:</label>
+        <input class="barrinha"
+          id="usuarioaltura"
+          name="usuarioaltura"
+          type="usuarioaltura"
+          placeholder="Escreva..."
+        />
+      </div><br>
+      <div class="pt5">
+        <label>Cintura:</label>
+        <input class="barrinha"
+          id="usuariocintura"
+          name="usuariocintura"
+          type="usuariocintura"
+          placeholder="Escreva..."
+        />
+      </div><br>
+      <div class="pt6">
+        <label>Quadril:</label>
+        <input class="barrinha"
+          id="usuarioquadril"
+          name="usuarioquadril"
+          type="usuarioquadril"
+          placeholder="Escreva..."
+        />
+      </div><br>
+      <div class="pt7">
+        <legend>Informe seu genero</legend>
+      </div><br>
+
+      <div class="pt8">
+        <label for="masculino">Masculino: <input type="radio" name="genero" value="masculino" /></label>
+        <label for="masculino">Feminino: <input type="radio" name="genero" value="feminino" /></label>
+      </div><br>
+
+      <div class="botao">
+        <button id="Cadastro" type="button">Cadastrar</button>
+      </div><br>
+      <div>
+        <select>
+          <option>Selecione um Paciente</option>
+        </select>
+      </div><br>
+    </fieldset>
+      <table class="minhatabela">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Genero</th>
+            <th>Peso(Kg)</th>
+            <th>Altura(m)</th>
+            <th>IMC</th>
+            <th>Gordura Corporal</th>
+            <th>Peso Ideal</th>
+            <th>TMB</th>
+          </tr>
+        </thead>
+        <tbody id="ListaDados"></tbody>
+      </table>
+      
+
+      <script type="module" src="./main.js"></script>
+      <footer></footer>
+    </div>
+  </body>
+</html>
