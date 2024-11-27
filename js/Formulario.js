@@ -6,8 +6,8 @@ class Formulario {
   }
 
   cadastrarUsuario(nome, idade, peso, altura, genero) {
-    const usuario = new Paciente(nome, idade, peso, altura, genero);
-    this.listaPacientes.push(usuario);
+    const pacientes = new Paciente(nome, idade, peso, altura, genero);
+    this.listaPacientes.push(pacientes);
   }
 
   listarUsuario() {
@@ -16,3 +16,4 @@ class Formulario {
 }
 
 export { Formulario };
+

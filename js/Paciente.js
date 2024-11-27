@@ -35,8 +35,8 @@ class Paciente {
   }
 
   pesoIdeal() {
-    const homens = 50 + 2.3(this.altura - 60);
-    const mulheres = 45.5 + 2.3 * (this.altura - 60);
+    const homens = 50 + 2.3*(this.altura * 100 - 152);
+    const mulheres = 45.5 + 2.3 * (this.altura * 100 - 152);
     if (this.genero == "masculino") {
       return homens;
     } else {
